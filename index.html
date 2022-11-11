@@ -1,273 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="ghostking.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a style="color:white;" class="navbar-brand ft-c" href="#">Bhawani Sankar Choudhury</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-bg-light"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bhawani Sankar Choudhury - Portfolio</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon" /><link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      href="./assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom css -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar py-3 bg-primary navbar-expand-lg">
+      <div class="container-fluid">
+        <a style="color: white" class="navbar-brand ft-c" href="#"
+          >Bhawani Sankar Choudhury</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <span class="flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
+              <li class="nav-item">
+                <a class="nav-link ft-c" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ft-c" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ft-c" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ft-c" href="#contact">Contact</a>
+              </li>
             </ul>
-            <form class="d-flex">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link ft-c" href="#home">Home</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link ft-c" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ft-c" href="#project">Project</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link ft-c" href="#contact">Contact</a>
-                      </li>
-                  </ul>
-            </form>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="hero"
+      class="hero route bg-image"
+      style="background-image: url(./assets/img/backlit-blur-close-up-dark.jpg)"
+    >
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hi I'm Bablu</p>-->
+            <h1 class="hero-title mb-4 text-white">Be a programmer</h1>
+            <p class="hero-subtitle">
+              <span
+                class="typed text-white"
+                data-typed-items="Welcome to my website, I'm Bhawani Sanakar Choudhury, A frontend developer"
+              ></span>
+            </p>
+            <p class="pt-3">
+              <button
+                class="btn btn-primary btn js-scroll px-4"
+                id="resumeBtn"
+                role="button"
+              >
+                Resume
+              </button>
+            </p>
           </div>
         </div>
-      </nav>
-      <main>
-
-        <div id="home">
-          <div class="space"></div>
-          <div class="ani d-flex justify-content-center">
-           <div class="anibx">
-            <div class="txt-avt">
-              Welcome to my website.
-          </div>
-          <br><br>
-          <div class="txt1">
-              <h3>Be a Programmer</h3><br>
-              <div class="btn r"><a href="doc/Resume.pdf"></a>Resume</div> <span class="aro"><img src="doc/rarrow.png" ></span>
-              <p>Thank you for visiting My website</p>
-           </div>
-          </div>
-          </div>
-        </div>
-
-        <div id="about">
-          <div class="contain"></div>
-        <div class="container1 d-flex justify-content-around">
-            <div class="box1">
-                <img src="doc/photo.jpg">
-            </div>
-            <div class="box2">
-                <h1>Bhawani Sankar Choudhury</h1>
-                <span class="hd">Web Devloper</span>
-                <div class="s-media">
-                    <img src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7528824071724d12a3e6c31eee0b40d4.png">
-                    <img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01ab6619093f45388d66736ec22e5885.png">
-                </div>
-              <div class="para">
-                <p>
-                </p>
-              </div>
-                      <span class="btn bgr">About Me</span>
-                      <div class="txt-bx">
-                        <h4>I am Bhawani Sanakar Choudhury</h4>
-                        <h4>I am good in frontend</h4>
-                        <h4>I am a quick Learner</h4>
-                        <h4>I am Passionate about my work</h4>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-5">
+                        <div class="about-img">
+                          <img
+                            src="./assets/img/me.jpg"
+                            class="img-fluid rounded b-shadow-a"
+                            alt=""
+                          />
+                        </div>
                       </div>
-                      <div class="sociamedia">
-                        <a href="https://www.instagram.com/_bablu_choudhury_/?hl=en">
-                            <img src="doc/instagram.png" class="mlogo">
-                        </a>
-                        <a href="https://www.facebook.com/bablu.choudhury.39"><img src="doc/facebook.png" class="mlogo">
-                        </a>
-                        <a href=""><img src="doc/teligram.png" class="mlogo"></a>
-                        <a href="https://www.linkedin.com/in/bhawani-sankar-choudhury-798864144/">
-                            <img src="doc/linkedin.png" class="mlogo"></a>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="about-info">
+                          <p>
+                            <span class="title-s">Name: </span>
+                            <span>Bhawani Sanakar Choudhury</span>
+                          </p>
+                          <p>
+                            <span class="title-s">Profile: </span>
+                            <span>I am good in frontend</span>
+                          </p>
+                          <p>
+                            <span class="title-s">Email: </span>
+                            <span>
+                              <a href="mailto:babluchoudhury478@gmail.com"
+                                >babluchoudhury478@gmail.com</a
+                              >
+                            </span>
+                          </p>
+                          <p>
+                            <span class="title-s">Phone: </span>
+                            <span>
+                              <a href="tel:+917608833251">+91 7608833251</a>
+                            </span>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-            </div>
-        </div>
-        <div class="cnt d-flex justify-content-lg-around">
-          <div class="box1">
-              <span class="ht">Skills</span>
-              <div class="skl">
-                <div class="bx1 d-flex justify-content-between">
-                  <img src="doc/c-programming.png">
-                <img src="doc/C-Sharp-logo-vector.svg">
-                <img src="doc/HTML-5-logo-vector-01.svg">
-                <img src="doc/CSS-3-logo-vector-01.svg">
-              </div>
-              <br>
-              <div class="bx1 d-flex justify-content-between">
-                <img src="doc/JQuery-logo-vector-01.svg" >
-                <img src="doc/Java-logo-vector-01.svg">
-                <img src="doc/asp.jfif">
-                <img src="doc/Microsoft-sql-server-logo-vector-01.svg">
-              </div>
-              <div class="bx1 d-flex justify-content-between">
-                <img src="doc/Visual-studio-code-icon-vector-02.svg" alt="">
-                <img src="doc/download.jfif">
-                <img src="doc/JavaScript-logo-vector-01.svg">
-                <img src="doc/Visual-studio-icon-vector-02.svg" alt="">
-                </div>
-              </div>
-          </div>
-          <div class="box2">
-              <div class="para">
-                <div class="ln">C</div>
-                <div class="progress">
-                  <div class="progress-bar c"></div>
-                </div>
-                  <div class="ln">C#.net</div>
-                  <div class="progress ">
-                    <div class="progress-bar cs" ></div>
+                    <div class="skill-mf">
+                      <p class="title-s">Skill</p>
+                      <span>HTML</span>
+                      <span class="pull-right">85%</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 85%"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>CSS3</span>
+                      <span class="pull-right">75%</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 75%"
+                          aria-valuenow="75"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>C</span>
+                      <span class="pull-right">50%</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 50%"
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>JAVASCRIPT</span>
+                      <span class="pull-right">90%</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 90%"
+                          aria-valuenow="90"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>BOOTSTRAP</span>
+                      <span class="pull-right">95%</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 95%"
+                          aria-valuenow="95"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                      <span>ASP.NET</span>
+                      <span class="pull-right">65%</span>
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 65%"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ln">ASP.net</div>
-                <div class="progress">
-                  <div class="progress-bar asp"></div>
-                </div>
-                  <div class="ln">Java</div>
-                  <div class="progress">
-                    <div class="progress-bar j" ></div>
-                  </div>
-                  <div class="ln">HTML</div>
-                  <div class="progress">
-                    <div class="progress-bar h" ></div>
-                  </div>
-                  <div class="ln">CSS</div>
-                  <div class="progress">
-                    <div class="progress-bar css" ></div>
-                  </div>
-                  <div class="ln">JavaScript</div>
-                  <div class="progress">
-                    <div class="progress-bar js" ></div>
-                  </div>
-                  <div class="ln">JQuery</div>
-                  <div class="progress">
-                    <div class="progress-bar jq" ></div>
-                  </div>
-                  <div class="ln">Boostrap</div>
-                  <div class="progress">
-                    <div class="progress-bar b" ></div>
-                  </div>
-                  <div class="ln">SQL</div>
-                  <div class="progress">
-                    <div class="progress-bar s" ></div>
-                  </div>
-              </div>
-        </div>
-            </div>
-        </div>
-
-        <div id="project">
-          <div class="cnt2 ">
-            <div class="had text-center">Project</div>
-            <div class="pjbox d-flex justify-content-around ">
-              <div class="bx1">
-                <div class="logo d-flex justify-content-center">
-                  <img src="doc/calculator.png">
-                </div>
-                <div class="nm d-flex justify-content-center">
-                  <div class="n-tag">Calculator</div>
-                </div>
-                <div class="p-txt text-center">
-                  <div class="p-para">
-                    This Project using HTML,CSS <br>
-                    &JavScript
-                  </div>
-                </div>
-              </div>
-              <div class="bx1">
-                <div class="logo d-flex justify-content-center">
-                  <img src="doc/Todolist.png">
-                </div>
-                <div class="nm d-flex justify-content-center">
-                  <div class="n-tag">Todo List</div>
-                </div>
-                <div class="p-txt text-center">
-                  <div class="p-para">
-                    This Project using HTML,CSS, <br>
-                    JavScript & Boostrap
-                  </div>
-                </div>
-              </div>
-              <div class="bx1">
-                <div class="logo d-flex justify-content-center">
-                  <img src="doc/Cripto.png">
-                </div>
-                <div class="nm d-flex justify-content-center">
-                  <div class="n-tag">Crypto Currency Website</div>
-                </div>
-                <div class="p-txt text-center">
-                  <div class="p-para">
-                    This Project using HTML,CSS <br>
-                    &JavScript
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">About me</h5>
+                      </div>
+                      <p class="text">
+                        I'm Bhawani Sanakar Choudhury. A self taught frontend
+                        developer. I'm a quick Learner. Passionate about my work
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div id="contact">
-          <div class="contact d-flex justify-content-lg-around">
-            <div class="box2">
-              <div class="c-had">   
-              Contact <br>
-              Information
+      </section>
+      <!-- End About Section -->
+      <!-- ======= Services Section ======= -->
+      <section id="project" class="services-mf pt-5 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Projects</h3>
+                <!-- <p class="subtitle-a">
+                  This is sub tex
+                </p> -->
+                <div class="line-mf"></div>
               </div>
-              <p class="ph">Software &   <br>
-                Web Devloper </p>
-                <p>Naypali,Bhubaneswar <br>
-                  Odisha,751012</p>
-                  <p>babluchoudhury478@gmail.com <br>
-                    +91 7608833251</p>
-                    <div class="s-media">
-                      <img src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7528824071724d12a3e6c31eee0b40d4.png">
-                      <img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_26,h_26,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/01ab6619093f45388d66736ec22e5885.png">
-                  </div>
             </div>
-            <div class="box1">
-              <div class="container d-flex">
-                <table>
-                  <tr>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td>Email</td>
-                    <td>Subject</td>
-                  </tr>
-                  <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                  </tr>
-                  <tr>
-                    <td>Leave a message</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2"><input type="text" class="sz"></td>
-                    <td></td>
-                  </tr>
-                  <tr><td colspan="2"><button class="btn sub">Submit</button></td></tr>
-                </table>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle">
+                    <i class="bi bi-calculator"></i>
+                  </span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Calculator</h2>
+                  <p class="s-description text-center">
+                    This Project using HTML,CSS & JavScript
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle">
+                    <i class="bi bi-card-checklist"></i>
+                  </span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Todo List</h2>
+                  <p class="s-description text-center">
+                    This Project using HTML,CSS, JavScript & Boostrap
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle">
+                    <i class="bi bi-bar-chart"></i>
+                  </span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Crypto Currency Website</h2>
+                  <p class="s-description text-center">
+                    This Project using HTML,CSS & JavScript
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-
-      <script src="ghostking.js"></script>
-</body>
+      </section>
+      <section
+        id="contact"
+        class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      >
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left">Send Message</h5>
+                      </div>
+                      <div>
+                        <form id="contactForm" role="form" autocomplete="off">
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  class="form-control"
+                                  id="name"
+                                  placeholder="Your Name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  name="email"
+                                  id="email"
+                                  placeholder="Your Email"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name="subject"
+                                  id="subject"
+                                  placeholder="Subject"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea
+                                  class="form-control"
+                                  name="message"
+                                  rows="5"
+                                  id="message"
+                                  placeholder="Message"
+                                  required
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <button
+                                type="submit"
+                                id="btn"
+                                class="button mt-5 button-a button-big button-rouded"
+                              >
+                                Send Message
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">Get in Touch</h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">Please feel free to contact.</p>
+                        <ul class="list-ico">
+                          <li>
+                            <span class="bi bi-geo-alt"></span> Naypali,
+                            Bhubaneswar Odisha,751012
+                          </li>
+                          <li>
+                            <span class="bi bi-phone"></span>
+                            <a href="tel:+917608833251">+91 7608833251</a>
+                          </li>
+                          <li>
+                            <span class="bi bi-envelope"></span>
+                            <a href="mailto:babluchoudhury478@gmail.com"
+                              >babluchoudhury478@gmail.com</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/bablu.choudhury.39"
+                              target="_blank"
+                            >
+                              <span class="ico-circle">
+                                <i class="bi bi-facebook"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.instagram.com/_bablu_choudhury_/?hl=en"
+                              target="_blank"
+                            >
+                              <span class="ico-circle">
+                                <i class="bi bi-instagram"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank">
+                              <span class="ico-circle">
+                                <i class="bi bi-telegram"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/in/bhawani-sankar-choudhury-798864144/"
+                              target="_blank"
+                            >
+                              <span class="ico-circle">
+                                <i class="bi bi-linkedin"></i>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            Crafted with ❤️ by
+            <a
+              href="https://www.instagram.com/_bablu_choudhury_/?hl=en"
+              target="_blank"
+              class="text-white"
+              >Bablu</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <script>
+      $(document).ready(function () {
+        $("#resumeBtn").click(function () {
+          window.open("doc/Resume.pdf");
+        });
+        $("#contactForm").submit(function (event) {
+          event.preventDefault();
+          let formValues = $(this).serialize();
+          if (
+            $("#name").val() != "" &&
+            $("#email").val() != "" &&
+            $("#subject").val() != "" &&
+            $("#message").val() != ""
+          ) {
+            $("#btn").prop("disabled", true);
+            // $.post("contact.php", formValues, function(data) {
+            //   alert(data);
+            //   $("#btn").prop("disabled", false);
+            // });
+            alert("This function has been disabled.");
+          } else {
+            alert("Please fill all.");
+            $("#btn").prop("disabled", false);
+          }
+        });
+      });
+    </script>
+    <script src="./assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
